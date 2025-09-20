@@ -42,8 +42,14 @@ var NotificationMessage = /** @class */ (function (_super) {
     };
     return NotificationMessage;
 }(Message));
+// Teste do sistema
+var msg1 = new TextMessage("Olá! Tudo bem?");
+var msg2 = new NotificationMessage("Você tem uma nova atualização!");
+msg1.send();
+msg2.send();
+
 // Teste
-var msg1 = new TextMessage("Olá! Como você está?");
-var msg2 = new NotificationMessage("Você tem uma nova solicitação!");
+var msg1 = new TextMessage("Bom dia!");
+var msg2 = new NotificationMessage("Sua encomenda chegou.");
 msg1.send();
 msg2.send();
