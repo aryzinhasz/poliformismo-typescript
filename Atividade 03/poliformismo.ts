@@ -24,9 +24,17 @@ class NotificationMessage extends Message {
   }
 }
 
-// Teste
-const msg1: Message = new TextMessage("Olá! Como você está?");
-const msg2: Message = new NotificationMessage("Você tem uma nova solicitação!");
+/* Teste
+const msg1: Message = new TextMessage("Olá! Tudo bem?");
+const msg2: Message = new NotificationMessage("Você tem uma nova atualização!");
 
 msg1.send();
-msg2.send();
+msg2.send();*/
+
+// Teste do sistema
+const msg1: Message = new TextMessage("Bom dia!");
+const msg2: Message = new NotificationMessage("Sua encomenda chegou.");
+
+// Chamando o mesmo método (polimorfismo em ação)
+msg1.send(); // Enviando mensagem de texto: "Bom dia!"
+msg2.send(); // Enviando notificação: "Sua encomenda chegou."
